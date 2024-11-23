@@ -1,10 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 function Details() {
-   
+  let [movie, setMovie] =useState({});
+  let {imdbID} = useParams();
+  useEffect (()=>{
+    axios.get(`https://www.omdbapi.com/?apikey=86972dfa&s=${imdbID}`).then((movies)=>{
+      setMovie(movies.data.Search);
+    })
+   })
   return (
     <div>
-      <h1>This is a Details Page!!!</h1>
+    <div className="">
+      <img src={movie.poster} alt="" />
+        
+    </div>
+
     </div>
   )
 }

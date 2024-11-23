@@ -1,11 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Card({poster}) {
+function Card({poster,title}) {
   return (
     <div>
-      <div className="w-[200px]">
-        <img src={poster} className='w-[200px]' alt="" />
+
+      <Link to={`/details`}>
+      <div className="ml-2 mt-10">
+        <img src={poster} className='h-[200px]' alt="" />
       </div>
+      </Link>
+
     </div>
   )
 }
