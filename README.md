@@ -1,8 +1,22 @@
-# React + Vite
+# 🎬 Movie Details App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and modern web app that displays **movie details** using **React** and styled with **Tailwind CSS**. Users can view movie posters, titles, and other basic details fetched dynamically.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔹 Features
+
+- 🎬 Movie Listings – Displays a list of movies with essential details like title, poster, and overview.
+- 🔍 Search Functionality – Users can search for movies by title.
+- 📄 Detailed View – Shows extended info such as release date, rating, and description.
+- 🧪 Error Handling – Handles missing or broken data gracefully.
+  
+
+## 🚀 Tech Stack
+- React.js
+- Tailwind CSS
+- JavaScript
+- HTML5
+
+
+## 🖥️ Live Demo
+   [🔗 View Movie Details App](https://movie-details-seven.vercel.app/)
