@@ -1,15 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Card({poster,title}) {
+function Card({poster,id}) {
   return (
     <div>
-
-      <Link to={`/details`}>
-      <div className="ml-2 mt-10">
-        <img src={poster} className='h-[200px]' alt="" />
+      
+      <div className="">
+        <Link to={`/details/${id}`}><img src={poster} className='h-[220px] w-[180px] rounded-md shadow-md object-cover' alt="movie poster" /></Link>
       </div>
-      </Link>
 
     </div>
   )
